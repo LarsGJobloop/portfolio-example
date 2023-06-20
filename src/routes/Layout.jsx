@@ -1,5 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 
+import {ExternalLink} from "../components/ExternalLink/ExternalLink"
+
 export function Layout() {
   return (
     <div>
@@ -27,6 +29,9 @@ export function Layout() {
 
       <footer>
         <h2>Footer</h2>
+        <nav>
+          <ExternalLink href="https://github.com/larsgjobloop">GitHub</ExternalLink>
+        </nav>
       </footer>
     </div>
   )
